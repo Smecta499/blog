@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
+@font-face {
+    font-family: 'Kapakana Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Kapakana Regular'), url('Kapakana[wght].woff') format('woff');
+    }
+
+
+/* style du titre  */
+h1 {
+    text-align: center;
+    font-family: 'kapakana Regular';
+    font-size: 400px;
+    margin-top: -80px;
+    color: rgb(79, 135, 153);
+    margin-bottom: 0px;
+    padding-top: 200px;
+}
+
+/* bote grise autour du titre  */
+.titre {
+    height: 790px;
+    width: 2524px;
+    background-color: #808080c9;   
+}
+
+/* position de la liste dans la navbarre  */
+nav button {
+    display: grid;
+    grid-template-columns: 25%, 25%, 25%, 25% ;
+    align-items: center;
+    justify-content: space-around;
+    border: 0;
+    background-color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+/* boite de la navbarre */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    font-size: 45px;
+    margin-left: 800px;
+    margin-right:  800px;
+}
+
+/* style des boite qu'on peut faire defilé  */
+.box {
+    background: rgb(79, 135, 153);
+    color: white;
+    height: 200px;
+    width: 1000px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* scroll barre pour les boite  */
+.scroll-container {
+    width: 1020px; /* ajustez la largeur selon vos besoins */
+    max-height: 400px; /* ajustez la hauteur selon vos besoins */
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 730px;
+}
+
+/* style des scroll barre pour chaque navigateur  */
+.scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* pour enlever la barre de d'effilement de base de la page */
+/* Pour les navigateurs WebKit (Chrome, Safari, etc.) */
+body {
+    overflow: hidden; /* Cache les barres de défilement */
+}
+
+/* Pour Firefox */
+body {
+    scrollbar-width: none; /* Cache les barres de défilement */
+}
+
+/* Pour les navigateurs WebKit (Chrome, Safari, etc.) */
+body::-webkit-scrollbar {
+    display: none; /* Cache les barres de défilement */
+}
